@@ -35,7 +35,7 @@ public class SwordScript : MonoBehaviour
         if (dot > 0.7f)
         {
             Debug.Log("Correct slice!");
-            Destroy(hit.gameObject);
+            Destroy(hit.transform.parent.gameObject);
         }
         else
         {

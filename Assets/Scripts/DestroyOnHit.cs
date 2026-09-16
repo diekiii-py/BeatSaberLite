@@ -4,9 +4,9 @@ using System.Collections;
 
 public class DestroyOnHit : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider Other)
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.GameObject);
+        Destroy(other.transform.parent.gameObject);
     }
 }
     

@@ -27,6 +27,9 @@ public class HitSpawner : MonoBehaviour
     public bool isRandom = true;
     public TextAsset beatmapFile;
 
+    public int bpm;
+    public int subBeats;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,6 +38,7 @@ public class HitSpawner : MonoBehaviour
     
     IEnumerator SpawnHits()
     {
+        float spawnTime = 60f / (bpm * subBeats);
         while(isRandom)
         {
             GameObject prefab = hitPrefabs[Random.Range(0, hitPrefabs.Length)];
@@ -49,7 +53,7 @@ public class HitSpawner : MonoBehaviour
                 movingHit.requiredDirection = rotationInfo[1];
             }
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(spawnTime);
         }
         
         while(!isRandom)
@@ -68,7 +72,7 @@ public class HitSpawner : MonoBehaviour
 
             int bpm = int.Parse(beatmapInfo[0]);
             int subBeats = int.Parse(beatmapInfo[1]);
-            float spawnTime = 60f / (bpm * subBeats);
+            spawnTime = 60f / (bpm * subBeats);
 
             foreach (string line in beatmapInfo.Skip(2))
             {

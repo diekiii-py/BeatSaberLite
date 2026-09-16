@@ -8,7 +8,7 @@ public class MovingHit : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.forward * 0.5f * Time.deltaTime;
+        transform.position += transform.forward * -5f * Time.deltaTime;
     }
     
 }

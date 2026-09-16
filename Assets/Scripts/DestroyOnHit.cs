@@ -6,7 +6,11 @@ public class DestroyOnHit : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.transform.parent.gameObject);
+        MovingHit hit = other.GetComponentInParent<MovingHit>();
+        if (hit != null)
+        {
+            Destroy(hit.gameObject);
+        }
     }
 }
     

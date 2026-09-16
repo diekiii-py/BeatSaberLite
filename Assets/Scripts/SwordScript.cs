@@ -18,11 +18,10 @@ public class SwordScript : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        MovingHit hit = other.GetComponent<MovingHit>();
+        MovingHit hit = other.GetComponentInParent<MovingHit>();
         if (hit == null) return;
 
-
-        if(other.tag != swordColorTag)
+        if (!hit.gameObject.CompareTag(swordColorTag))
         {
             Debug.Log("Wrong color");
             return;
@@ -35,7 +34,7 @@ public class SwordScript : MonoBehaviour
         if (dot > 0.7f)
         {
             Debug.Log("Correct slice!");
-            Destroy(hit.transform.parent.gameObject);
+            Destroy(hit.gameObject);
         }
         else
         {

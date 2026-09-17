@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Purple
   - Red
+  - isRandom
+  - isNotRandom
+  - speedUp
+  - speedDown
+  - sword
+  - timingEarly
+  - timingLate
   layers:
   - Default
   - TransparentFX

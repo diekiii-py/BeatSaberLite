@@ -625,7 +625,6 @@ UnityEngine.GameObject::SendMessage_Injected
 UnityEngine.GameObject::SetActive_Injected
 UnityEngine.GameObject::TryGetComponentFastPath_Injected
 UnityEngine.GameObject::get_scene_Injected
-UnityEngine.GameObject::get_tag_Injected
 UnityEngine.GameObject::set_layer_Injected
 UnityEngine.GameObject::FindGameObjectsWithTag_Injected
 UnityEngine.GeometryUtility::Internal_TestPlanesAABB_Injected

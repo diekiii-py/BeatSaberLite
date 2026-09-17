@@ -8,6 +8,7 @@ public class loadDemo : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.CompareTag("sword")) return;
         SceneManager.LoadScene("Demo");
     }
 

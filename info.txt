@@ -1,0 +1,4 @@
+This is a preliminary version as I was getting trouble with the Meta headset and the cable. I was not able to upload a video because of this, I hope I can get a day extension!
+
+The idea of this BeatSaber clone is that the 'demo' has randomized spawning, while the 'special' spawns on a predetermined beat map. I was planning to add timing to that version as well.
+The blocks also look different, in an attempt to make the pattern to hit the block a little more readable and clear. I believe the blocks collision might not work very well either.

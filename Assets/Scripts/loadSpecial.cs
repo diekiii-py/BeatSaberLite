@@ -7,6 +7,7 @@ public class loadSpecial : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("GangnamStyle");
+        if (!other.CompareTag("sword")) return;
+        SceneManager.LoadScene("Special");
     }
 }

@@ -326,7 +326,10 @@ UnityEngine.AsyncOperation::InternalSetManagedObject
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::PlayHelper_Injected
 UnityEngine.AudioSource::PlayOneShotHelper_Injected
+UnityEngine.AudioSource::Stop_Injected
+UnityEngine.AudioSource::set_generatorObject_Injected
 UnityEngine.AudioSource::set_loop_Injected
 UnityEngine.AudioSource::set_playOnAwake_Injected
 UnityEngine.Awaitable::IsNativeAwaitableCompleted
@@ -1019,6 +1022,8 @@ UnityEngine.Mesh::get_vertexBufferTarget_Injected
 UnityEngine.Mesh::get_indexFormat_Injected
 UnityEngine.Mesh::GetVertexAttributeFormat_Injected
 UnityEngine.MeshCollider::get_convex_Injected
+UnityEngine.MeshCollider::set_convex_Injected
+UnityEngine.MeshCollider::set_sharedMesh_Injected
 UnityEngine.MeshFilter::get_sharedMesh_Injected
 UnityEngine.MeshFilter::set_mesh_Injected
 UnityEngine.MeshFilter::set_sharedMesh_Injected
@@ -1513,6 +1518,7 @@ UnityEngine.Rigidbody::get_angularDamping_Injected
 UnityEngine.Rigidbody::get_linearDamping_Injected
 UnityEngine.Rigidbody::get_maxAngularVelocity_Injected
 UnityEngine.Rigidbody::get_maxLinearVelocity_Injected
+UnityEngine.Rigidbody::AddForce_Injected
 UnityEngine.Rigidbody::MovePosition_Injected
 UnityEngine.Rigidbody::MoveRotation_Injected
 UnityEngine.Rigidbody::get_angularVelocity_Injected
@@ -1525,6 +1531,7 @@ UnityEngine.Rigidbody::set_interpolation_Injected
 UnityEngine.Rigidbody::set_isKinematic_Injected
 UnityEngine.Rigidbody::set_linearDamping_Injected
 UnityEngine.Rigidbody::set_linearVelocity_Injected
+UnityEngine.Rigidbody::set_mass_Injected
 UnityEngine.Rigidbody::set_useGravity_Injected
 UnityEngine.Rigidbody::get_interpolation_Injected
 UnityEngine.ScalableBufferManager::get_heightScaleFactor
